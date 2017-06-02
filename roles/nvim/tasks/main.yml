@@ -1,0 +1,26 @@
+---
+- name: ensure share directories exist
+  file:
+    name: '{{ share_dest }}/{{ item }}'
+    state: directory
+  with_items:
+    - 'site/autoload'
+    - 'lib'
+
+- name: checkout vim-plug
+  git:
+    repo: 'https://github.com/junegunn/vim-plug.git'
+    dest: '{{ share_dest }}/lib/vim-plug'
+
+- name: link vim-plug 
+  file:
+    src: '{{ share_dest }}/lib/vim-plug/plug.vim'
+    dest: '{{ share_dest }}/site/autoload/plug.vim'
+    state: link
+
+- name: link nvim config dir
+  file:
+    src: '{{ configs }}/nvim'
+    dest: '{{ config_dest }}'
+    state: link
+
