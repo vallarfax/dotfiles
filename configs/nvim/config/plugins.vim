@@ -3,7 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 " Plug 'carlitux/deoplete-ternjs', {'do': 'npm install -g tern'}
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
@@ -14,9 +14,12 @@ Plug 'terryma/vim-expand-region'
 Plug 'tpope/vim-surround'
 Plug 'moll/vim-bbye'
 " Plug 'qpkorr/vim-bufkill'
-Plug 'roxma/nvim-completion-manager'
+" Plug 'roxma/nvim-completion-manager'
 " Plug 'neomake/neomake'
 Plug 'w0rp/ale'
+Plug 'benizi/vim-automkdir'
+" Plug 'tpope/vim-fugitive'
+Plug 'lambdalisue/gina.vim'
 
 " Language plugins
 Plug 'pangloss/vim-javascript'
@@ -26,8 +29,8 @@ Plug 'sbdchd/neoformat'
 Plug 'pearofducks/ansible-vim'
 Plug 'tikhomirov/vim-glsl'
 " Plug 'roxma/clang_complete'
-
-Plug '~/Dev/clang_complete'
+" Plug '~/Dev/clang_complete'
+" Plug 'tweekmonster/deoplete-clang2'
 
 " Theme plugins
 Plug 'mhartington/oceanic-next'

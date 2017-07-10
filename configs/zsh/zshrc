@@ -5,6 +5,8 @@ ZSH_THEME="robbyrussell-mod"
 
 ZSH_CUSTOM=$HOME/.zsh_custom
 
+PATH=$PATH:~/Library/Python/2.7/bin
+
 alias vim=nvim
 
 export NVM_LAZY_LOAD=true

@@ -1,4 +1,4 @@
-let g:ale_cpp_clang_options = "-Wall -std=c++14 -stdlib=libc++ -I/usr/local/include/SDL2 -D_THREAD_SAFE -I/usr/local/include"
+let g:ale_cpp_clang_options = "-Wall -Wno-switch -Wno-unused-variable -std=c++14 -stdlib=libc++ -I/usr/local/include/SDL2 -D_THREAD_SAFE -DCOMPILER_LLVM=1 -I/usr/local/include -Iinclude -I/usr/local/include/freetype2"
 let g:ale_linters = {
 \   'cpp': ['clang'],
 \}

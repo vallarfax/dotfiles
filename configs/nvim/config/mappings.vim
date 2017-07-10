@@ -56,6 +56,7 @@ nnoremap <leader>wj <C-w>j
 nnoremap <leader>wk <C-w>k
 nnoremap <leader>wl <C-w>l
 nnoremap <leader>wr <C-w>r
+nnoremap <leader>wh <C-w>h
 
 
 " TODO: Figure out if I want to keep the default mappings
