@@ -67,3 +67,9 @@ nnoremap <leader>wh <C-w>h
 
 " TODO: is this a good key combo?
 nnoremap <leader>bf :Neoformat<CR>
+
+" Git shortcuts
+nnoremap <leader>gs :Gina status<CR>
+nnoremap <leader>gc :Gina commit<CR>
+nnoremap <leader>gd :Gina diff<CR>
+

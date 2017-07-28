@@ -3,7 +3,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Plug 'Shougo/denite.nvim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
+Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer'}
+" Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
 " Plug 'carlitux/deoplete-ternjs', {'do': 'npm install -g tern'}
 Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
@@ -16,7 +17,7 @@ Plug 'moll/vim-bbye'
 " Plug 'qpkorr/vim-bufkill'
 " Plug 'roxma/nvim-completion-manager'
 " Plug 'neomake/neomake'
-Plug 'w0rp/ale'
+" Plug 'w0rp/ale'
 Plug 'benizi/vim-automkdir'
 " Plug 'tpope/vim-fugitive'
 Plug 'lambdalisue/gina.vim'
