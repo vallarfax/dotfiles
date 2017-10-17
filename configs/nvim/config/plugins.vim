@@ -18,7 +18,7 @@ Plug 'roxma/nvim-completion-manager'
 Plug 'roxma/ncm-clang'
 Plug 'roxma/nvim-cm-tern', {'do': 'npm install'}
 Plug 'SirVer/ultisnips'
-" Plug 'w0rp/ale'
+Plug 'w0rp/ale'
 
 " Language plugins
 Plug 'pangloss/vim-javascript'
