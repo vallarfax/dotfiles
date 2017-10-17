@@ -4,12 +4,15 @@
 " let g:deoplete#enable_profile = 1
 
 " Move up and down in auto-complete
-imap <expr><C-j>   pumvisible() ? "\<Down>" : "\<C-j>"
-imap <expr><C-k>   pumvisible() ? "\<Up>" : "\<C-k>"
+" imap <expr><C-j>   pumvisible() ? "\<Down>" : "\<C-j>"
+" imap <expr><C-k>   pumvisible() ? "\<Up>" : "\<C-k>"
 
-let g:ycm_extra_conf_globlist = ['~/Dev/recover/*']
-let g:ycm_autoclose_preview_window_after_insertion = 1
-set completeopt-=preview
+" let g:ycm_extra_conf_globlist = ['~/Dev/recover/*', '~/Dev/microprojects/*']
+" let g:ycm_autoclose_preview_window_after_insertion = 1
+" set completeopt-=preview
+
+imap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
+imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 
 " if !exists('g:ycm_semantic_triggers')
 "   let g:ycm_semantic_triggers = {}

@@ -11,6 +11,7 @@ nnoremap k gk
 
 " Open config files
 nnoremap <leader>fvs :Files ~/.config/nvim/<CR>
+nnoremap <leader>fvd :Files ~/.dotfiles/<CR>
 
 " Reload config
 nnoremap <leader>fvr :so ~/.config/nvim/init.vim<CR>
@@ -22,6 +23,9 @@ nnoremap <leader>Pr :UpdateRemotePlugins<CR>
 " Clear search highlight
 nnoremap <leader>sc :let @/ = ""<CR>
 
+" Make
+nnoremap <leader>mm :make<CR><CR>
+
 
 " Search mappings 
 
@@ -31,8 +35,11 @@ nnoremap <leader>f/ :Files<CR>
 " Search filenames with current buffer directory as base
 nnoremap <leader>ff :Files %:p:h<CR>
 
+" Makes it easier to create new file in same dir as current buffer
+nnoremap <leader>fn :e %:h
+
 " Search in files with current working directory as base
-nnoremap <leader>/ :Ag<CR>
+nnoremap <leader>/ :Rg<CR>
 
 " Search lines in current buffer
 nnoremap <leader>sb :BLines<CR>
@@ -69,7 +76,15 @@ nnoremap <leader>wh <C-w>h
 nnoremap <leader>bf :Neoformat<CR>
 
 " Git shortcuts
-nnoremap <leader>gs :Gina status<CR>
+nnoremap <leader>gs :Gina status -s<CR>
 nnoremap <leader>gc :Gina commit<CR>
 nnoremap <leader>gd :Gina diff<CR>
+
+" nnoremap <leader>mc :cclose<CR>
+" nnoremap <leader>mp :Dispatch ./all platform<CR>
+" nnoremap <leader>me :Dispatch ./all engine<CR>
+" nnoremap <leader>ma :Dispatch ./all all<CR>
+" nnoremap <leader>mr :Dispatch! ./build/recover<CR>
+
+" tnoremap <Esc> <C-\><C-n>
 

@@ -10,6 +10,7 @@ PATH=$PATH:~/Library/Python/2.7/bin
 alias vim=nvim
 
 export NVM_LAZY_LOAD=true
+export GOPATH=$HOME/Dev/go
 
 plugins=(git zsh-nvm vf-fzf)
 
@@ -18,3 +19,5 @@ source $ZSH/oh-my-zsh.sh
 # Load z to jump around
 source /usr/local/etc/profile.d/z.sh
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

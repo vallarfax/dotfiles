@@ -1,4 +1,4 @@
-export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_DEFAULT_OPTS="--history=$HOME/.fzfhistory
                          --history-size=10000
                          --tiebreak=end,length

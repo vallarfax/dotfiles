@@ -60,3 +60,8 @@ xnoremap < <gv
 
 "let g:neomake_open_list = 2
 
+augroup OpenQuickfixWindowAfterMake
+    autocmd QuickFixCmdPost [^l]* nested cwindow
+    autocmd QuickFixCmdPost    l* nested lwindow
+augroup END
+
