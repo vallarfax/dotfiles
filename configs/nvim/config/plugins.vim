@@ -12,6 +12,12 @@ Plug 'moll/vim-bbye'
 Plug 'benizi/vim-automkdir'
 Plug 'lambdalisue/gina.vim'
 Plug 'tpope/vim-dispatch'
+Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-eunuch'
+
+" bclose is a pre-req for ranger.vim
+" Plug 'rbgrouleff/bclose.vim' 
+" Plug 'francoiscabrol/ranger.vim'
 
 " Autocomplete
 Plug 'roxma/nvim-completion-manager'

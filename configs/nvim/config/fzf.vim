@@ -1,6 +1,6 @@
 "let $FZF_DEFAULT_COMMAND = 'ag -g -p <(printf "*.%s\n" ts mp4) ""'
 " let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-let $FZF_DEFAULT_COMMAND = 'rg --files'
+" let $FZF_DEFAULT_COMMAND = 'rg --files'
 
 " command! -bang -nargs=* Ag
 "   \ call fzf#vim#ag(<q-args>,
@@ -17,3 +17,5 @@ command! -bang -nargs=* Rg
   \   <bang>0 ? fzf#vim#with_preview('up:60%')
   \           : fzf#vim#with_preview('right:50%:hidden', '?'),
   \   <bang>0)
+
+let g:ackprg = 'ag --vimgrep'

@@ -10,5 +10,7 @@ let g:ale_linters = {
 \   'javascript': ['eslint'],
 \   'c': [],
 \   'cpp': [],
+\   'objc': [],
+\   'objcpp': [],
 \}
 

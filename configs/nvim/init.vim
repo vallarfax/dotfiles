@@ -3,6 +3,7 @@ set nocompatible
 source ~/.config/nvim/config/formatting.vim
 source ~/.config/nvim/config/ale.vim
 source ~/.config/nvim/config/autocomplete.vim
+source ~/.config/nvim/config/snippets.vim
 source ~/.config/nvim/config/plugins.vim
 source ~/.config/nvim/config/general.vim
 source ~/.config/nvim/config/mappings.vim

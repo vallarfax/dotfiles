@@ -24,7 +24,10 @@ nnoremap <leader>Pr :UpdateRemotePlugins<CR>
 nnoremap <leader>sc :let @/ = ""<CR>
 
 " Make
-nnoremap <leader>mm :make<CR><CR>
+nnoremap <leader>mm :make<CR>
+set makeprg=./b
+
+nnoremap <leader>x :cclose<CR>
 
 
 " Search mappings 
@@ -38,8 +41,17 @@ nnoremap <leader>ff :Files %:p:h<CR>
 " Makes it easier to create new file in same dir as current buffer
 nnoremap <leader>fn :e %:h
 
+" Search for the word under the cursor in the current directory
+"nnoremap <leader>fw mo:Ack! "\b<cword>\b" <CR>
+
 " Search in files with current working directory as base
-nnoremap <leader>/ :Rg<CR>
+" nnoremap <leader>/ :Rg<CR>
+
+" Search in files with current working directory as base
+nnoremap <leader>/ :Ack!<space>
+
+" Ranger
+nnoremap <leader>fb :Ranger<CR>
 
 " Search lines in current buffer
 nnoremap <leader>sb :BLines<CR>
@@ -51,19 +63,25 @@ nnoremap <leader>so :Lines<CR>
 nnoremap <leader><space> :Commands<CR>
 
 " Show open buffers
-nnoremap <leader>bb :Buffers<CR>
+nmap ; :Buffers<CR>
+" nnoremap <leader>bb :Buffers<CR>
 
 " Close buffer without closing split
 nnoremap <leader>bd :Bdelete<CR>
 
 
 " Window navigation
-nnoremap <leader>wh <C-w>h
-nnoremap <leader>wj <C-w>j
-nnoremap <leader>wk <C-w>k
-nnoremap <leader>wl <C-w>l
+" nnoremap <leader>wh <C-w>h
+" nnoremap <leader>wj <C-w>j
+" nnoremap <leader>wk <C-w>k
+" nnoremap <leader>wl <C-w>l
 nnoremap <leader>wr <C-w>r
-nnoremap <leader>wh <C-w>h
+" nnoremap <leader>wh <C-w>h
+
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 
 " TODO: Figure out if I want to keep the default mappings
