@@ -65,3 +65,5 @@ augroup OpenQuickfixWindowAfterMake
     autocmd QuickFixCmdPost    l* nested lwindow
 augroup END
 
+set title titlestring=nvim:%{substitute(getcwd(),'^.*/','','')}
+
