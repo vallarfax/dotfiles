@@ -24,7 +24,8 @@ nnoremap <leader>Pr :UpdateRemotePlugins<CR>
 nnoremap <leader>sc :let @/ = ""<CR>
 
 " Make
-nnoremap <leader>mm :make<CR>
+"nnoremap <leader>mm :make<CR>
+nnoremap M :make<CR>
 set makeprg=./b
 
 nnoremap <leader>x :cclose<CR>
