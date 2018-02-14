@@ -5,8 +5,9 @@
 
   roles:
     - js
-    - nvim
     - fzf
     - z
     - zsh
+    - nvim
+    - kitty
   
