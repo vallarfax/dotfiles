@@ -11,3 +11,15 @@
     dest: '{{ ansible_env.HOME }}/.zsh_lib'
     state: link
 
+# TODO: Move when I figure out how I want to reorganize things
+- name: ensure kitty conf dir exists
+  file:
+    name: '{{ ansible_env.HOME }}/Library/Preferences/kitty'
+    state: directory
+
+- name: link kitty.conf
+  file:
+    src: '{{ configs }}/kitty/kitty.conf'
+    dest: '{{ ansible_env.HOME }}/Library/Preferences/kitty/kitty.conf'
+    state: link
+
