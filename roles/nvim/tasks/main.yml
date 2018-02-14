@@ -1,4 +1,14 @@
 ---
+- name: install neovim
+  homebrew:
+    name: neovim
+    state: latest
+
+- name: install the silver searcher
+  homebrew:
+    name: the_silver_searcher
+    state: latest
+
 - name: ensure share directories exist
   file:
     name: '{{ share_dest }}/{{ item }}'
@@ -18,14 +28,14 @@
     dest: '{{ share_dest }}/site/autoload/plug.vim'
     state: link
 
+- name: ensure config dest exists
+  file:
+    name: '{{ config_dest }}'
+    state: directory
+
 - name: link nvim config dir
   file:
     src: '{{ configs }}/nvim'
-    dest: '{{ config_dest }}'
+    dest: '{{ config_dest }}/nvim'
     state: link
-
-- name: install the silver searcher
-  homebrew:
-    name: the_silver_searcher
-    state: latest
 
