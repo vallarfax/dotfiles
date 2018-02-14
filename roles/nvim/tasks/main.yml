@@ -24,3 +24,8 @@
     dest: '{{ config_dest }}'
     state: link
 
+- name: install the silver searcher
+  homebrew:
+    name: the_silver_searcher
+    state: latest
+
