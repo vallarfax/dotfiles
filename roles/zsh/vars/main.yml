@@ -1,4 +1,4 @@
 ---
 zsh_src: '{{ configs }}/zsh/'
-zsh_custom_dest: '{{ ansible_env.HOME }}/.zsh_custom'
+zsh_lib_dest: '{{ ansible_env.HOME }}/.zsh_lib'
 

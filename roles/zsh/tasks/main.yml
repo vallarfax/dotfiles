@@ -5,29 +5,9 @@
     dest: '{{ ansible_env.HOME }}/.zshrc'
     state: link
 
-- name: ensure zsh_custom plugins dir exists
+- name: link zsh_lib
   file:
-    name: '{{ zsh_custom_dest }}/plugins'
-    state: directory
-
-- name: link custom plugins
-  file:
-    src: '{{ zsh_src }}/plugins/{{ item }}'
-    dest: '{{ zsh_custom_dest }}/plugins/{{ item }}'
+    src: '{{ zsh_src }}/zsh_lib'
+    dest: '{{ ansible_env.HOME }}/.zsh_lib'
     state: link
-  with_items:
-    - vf-fzf
 
-# TODO: store these repos elsewhere
-- name: install other plugins from git
-  git:
-    repo: '{{ item.repo }}'
-    dest: '{{ zsh_custom_dest }}/plugins/{{ item.name }}'
-  with_items:
-    - {name: 'zsh-nvm', repo: 'https://github.com/lukechilds/zsh-nvm.git'}
-  
-- name: link theme directory
-  file:
-    src: '{{ zsh_src }}/themes'
-    dest: '{{ zsh_custom_dest }}/themes'
-    state: link
