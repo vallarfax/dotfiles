@@ -1,13 +1,13 @@
 ---
 - name: link zshrc
   file:
-    src: '{{ zsh_src }}/zshrc'
+    src: '{{ configs }}/zsh/zshrc'
     dest: '{{ ansible_env.HOME }}/.zshrc'
     state: link
 
 - name: link zsh_lib
   file:
-    src: '{{ zsh_src }}/zsh_lib'
+    src: '{{ configs }}/zsh/zsh_lib'
     dest: '{{ ansible_env.HOME }}/.zsh_lib'
     state: link
 
