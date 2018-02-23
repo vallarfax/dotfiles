@@ -1,4 +1,4 @@
-alias la='ls -la'
+alias la='ls -lha'
 
 function set-title() {
   TITLE="\033]0;$1\007"
