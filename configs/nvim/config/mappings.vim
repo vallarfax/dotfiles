@@ -26,7 +26,7 @@ nnoremap <leader>sc :let @/ = ""<CR>
 " Make
 "nnoremap <leader>mm :make<CR>
 nnoremap M :make<CR>
-set makeprg=./b
+set makeprg=./m
 
 nnoremap <leader>x :cclose<CR>
 
