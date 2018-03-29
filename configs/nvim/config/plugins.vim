@@ -16,8 +16,8 @@ Plug 'mileszs/ack.vim'
 Plug 'tpope/vim-eunuch'
 
 " bclose is a pre-req for ranger.vim
-" Plug 'rbgrouleff/bclose.vim' 
-" Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim' 
+Plug 'francoiscabrol/ranger.vim'
 
 " Autocomplete
 Plug 'roxma/nvim-completion-manager'
