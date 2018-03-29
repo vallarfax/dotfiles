@@ -99,18 +99,24 @@ nnoremap <leader>gs :Gina status -s<CR>
 nnoremap <leader>gc :Gina commit<CR>
 nnoremap <leader>gd :Gina diff<CR>
 
-" nnoremap <leader>mc :cclose<CR>
-" nnoremap <leader>mp :Dispatch ./all platform<CR>
-" nnoremap <leader>me :Dispatch ./all engine<CR>
-" nnoremap <leader>ma :Dispatch ./all all<CR>
-" nnoremap <leader>mr :Dispatch! ./build/recover<CR>
-
-" tnoremap <Esc> <C-\><C-n>
-
 " Close git status buffer
 call gina#custom#mapping#nmap(
 	      \ 'status', 'q',
 	      \ ':q<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
+" Close git commit buffer
+call gina#custom#mapping#nmap(
+	      \ 'commit', 'q',
+	      \ ':q!<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
+" Move from git status to git commit
+call gina#custom#mapping#nmap(
+	      \ 'status', '<C-c>',
+	      \ ':<C-u>Gina commit<CR>',
 	      \ {'noremap': 1, 'silent': 1},
 	      \)
 
