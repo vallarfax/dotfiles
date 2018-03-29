@@ -107,3 +107,10 @@ nnoremap <leader>gd :Gina diff<CR>
 
 " tnoremap <Esc> <C-\><C-n>
 
+" Close git status buffer
+call gina#custom#mapping#nmap(
+	      \ 'status', 'q',
+	      \ ':q<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
