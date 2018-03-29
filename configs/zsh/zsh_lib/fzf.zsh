@@ -10,7 +10,7 @@ export FZF_DEFAULT_OPTS="--history=$HOME/.fzfhistory
 # z with fzf
 j() {
   if [[ -z "$*" ]]; then
-    cd "$(_z -l 2>&1 | sed -n 's/^[ 0-9.,]*//p' | fzf --no-sort --tac --prompt='jump > ' --reverse)"
+    cd "$(_z -l 2>&1 | sed -n 's/^[ 0-9.,]*//p' | fzf --exact --no-sort --tac --prompt='jump > ' --reverse)"
   else
     _z "$@"
   fi
