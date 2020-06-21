@@ -5,6 +5,7 @@ unsetopt beep
 
 alias vim=nvim
 PATH=$PATH:/usr/local/bin
+export IONHOME="$HOME/Dev/bitwise/ion"
 
 # Do I need this, actually?
 zstyle :compinstall filename '/Users/chris/.zshrc'
@@ -18,3 +19,5 @@ done
 
 compinit
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -3,7 +3,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
+" Plug 'cohama/lexima.vim'
+Plug 'rstacruz/vim-closer'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'terryma/vim-expand-region'
@@ -20,9 +22,10 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 
 " Autocomplete
-Plug 'roxma/nvim-completion-manager'
-Plug 'roxma/ncm-clang'
-Plug 'roxma/nvim-cm-tern', {'do': 'npm install'}
+Plug 'ncm2/ncm2'
+" Plug 'roxma/nvim-completion-manager'
+" Plug 'roxma/ncm-clang'
+" Plug 'roxma/nvim-cm-tern', {'do': 'npm install'}
 Plug 'SirVer/ultisnips'
 Plug 'w0rp/ale'
 
