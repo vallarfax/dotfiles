@@ -9,6 +9,11 @@
     name: the_silver_searcher
     state: latest
 
+- name: install ripgrep
+  homebrew:
+    name: ripgrep
+    state: latest
+
 - name: ensure share directories exist
   file:
     name: '{{ share_dest }}/{{ item }}'
