@@ -15,11 +15,15 @@ j() {
     _z "$@"
   fi
 }
+zle -N j
+bindkey '^j' j
 
 # search through history
 fh() {
   print -z $(fc -l 1 | fzf --tac --no-sort --nth=2.. --reverse --query="$1" --prompt="history > " --reverse | sed 's/ *[0-9]* *//')
 }
+zle -N fh
+bindkey '^h' fh
 
 # cd to directory
 fcd() {
