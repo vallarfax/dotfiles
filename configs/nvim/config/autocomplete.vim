@@ -11,6 +11,7 @@
 " let g:ycm_autoclose_preview_window_after_insertion = 1
 " set completeopt-=preview
 
+set completeopt=noinsert,menuone,noselect
 imap <expr><C-j>   pumvisible() ? "\<C-n>" : "\<C-j>"
 imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 
@@ -23,4 +24,7 @@ imap <expr><C-k>   pumvisible() ? "\<C-p>" : "\<C-k>"
 
 " let g:clang_library_path = '/Applications/Xcode.app/Contents/Frameworks/libclang.dylib'
 " let g:clang_debug = 1
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
 

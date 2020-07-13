@@ -23,6 +23,9 @@ Plug 'francoiscabrol/ranger.vim'
 
 " Autocomplete
 Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
 " Plug 'roxma/nvim-completion-manager'
 " Plug 'roxma/ncm-clang'
 " Plug 'roxma/nvim-cm-tern', {'do': 'npm install'}
