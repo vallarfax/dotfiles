@@ -120,3 +120,7 @@ call gina#custom#mapping#nmap(
 	      \ {'noremap': 1, 'silent': 1},
 	      \)
 
+
+nnoremap <leader>dd <Plug>(coc-definition)
+nnoremap <leader>di <Plug>(coc-implementation)
+nnoremap <leader>dr <Plug>(coc-references)

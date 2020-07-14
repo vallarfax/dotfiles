@@ -1,3 +1,3 @@
 let g:UltiSnipsSnippetDirectories=["snips"]
-let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsExpandTrigger="<C-p>"
 

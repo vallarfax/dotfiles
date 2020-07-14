@@ -22,15 +22,15 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'francoiscabrol/ranger.vim'
 
 " Autocomplete
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-bufword'
-Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'ncm2/ncm2'
+" Plug 'roxma/nvim-yarp'
+" Plug 'ncm2/ncm2-bufword'
+" Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
 " Plug 'roxma/nvim-completion-manager'
 " Plug 'roxma/ncm-clang'
 " Plug 'roxma/nvim-cm-tern', {'do': 'npm install'}
 Plug 'SirVer/ultisnips'
-Plug 'w0rp/ale'
 
 " Language plugins
 Plug 'pangloss/vim-javascript'
