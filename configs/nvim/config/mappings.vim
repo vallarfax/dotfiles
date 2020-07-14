@@ -98,6 +98,9 @@ nnoremap <leader>bf :Neoformat<CR>
 nnoremap <leader>gs :Gina status -s<CR>
 nnoremap <leader>gc :Gina commit<CR>
 nnoremap <leader>gd :Gina diff<CR>
+nnoremap <leader>gb :Gina blame<CR>
+nnoremap <leader>gl :Gina log<CR>
+vnoremap <leader>gw :Gina browse :<CR>
 
 " Close git status buffer
 call gina#custom#mapping#nmap(
@@ -106,10 +109,38 @@ call gina#custom#mapping#nmap(
 	      \ {'noremap': 1, 'silent': 1},
 	      \)
 
+" Close git diff buffer
+call gina#custom#mapping#nmap(
+	      \ 'diff', 'q',
+	      \ ':bd<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
+" Close git blame buffer
+call gina#custom#mapping#nmap(
+	      \ 'blame', 'q',
+	      \ ':bd<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
+" Close git log buffer
+call gina#custom#mapping#nmap(
+	      \ 'log', 'q',
+	      \ ':bd<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
 " Close git commit buffer
 call gina#custom#mapping#nmap(
 	      \ 'commit', 'q',
 	      \ ':q!<CR>',
+	      \ {'noremap': 1, 'silent': 1},
+	      \)
+
+" Close git diff buffer
+call gina#custom#mapping#nmap(
+	      \ 'show', 'q',
+	      \ ':bd<CR>',
 	      \ {'noremap': 1, 'silent': 1},
 	      \)
 
