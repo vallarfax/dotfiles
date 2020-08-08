@@ -4,8 +4,8 @@ export FZF_DEFAULT_COMMAND='rg --files'
 export FZF_DEFAULT_OPTS="--history=$HOME/.fzfhistory
                          --history-size=10000
                          --tiebreak=end,length
-                         --color=bg+:#2C323C,hl:110,hl+:110
-                         --color=marker:110,pointer:110,spinner:110,info:110"
+                         --color=bg+:0,hl:14,hl+:14,prompt:14,gutter:0
+                         --color=marker:14,pointer:14,spinner:14,info:14"
 
 # z with fzf
 j() {

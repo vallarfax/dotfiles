@@ -1,10 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-commentary'
-" Plug 'jiangmiao/auto-pairs'
-" Plug 'cohama/lexima.vim'
 Plug 'rstacruz/vim-closer'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -23,18 +19,11 @@ Plug 'francoiscabrol/ranger.vim'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'ncm2/ncm2'
-" Plug 'roxma/nvim-yarp'
-" Plug 'ncm2/ncm2-bufword'
-" Plug 'ncm2/ncm2-tern',  {'do': 'npm install'}
-" Plug 'roxma/nvim-completion-manager'
-" Plug 'roxma/ncm-clang'
-" Plug 'roxma/nvim-cm-tern', {'do': 'npm install'}
 Plug 'SirVer/ultisnips'
 
 " Language plugins
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'MaxMEllon/vim-jsx-pretty'
 Plug 'mattn/emmet-vim'
 Plug 'sbdchd/neoformat'
 Plug 'pearofducks/ansible-vim'
@@ -44,7 +33,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 " Theme plugins
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
-Plug 'tyrannicaltoucan/vim-deep-space'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 

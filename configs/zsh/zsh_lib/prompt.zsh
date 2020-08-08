@@ -6,5 +6,5 @@ ls --color -d . &>/dev/null 2>&1 && alias ls='ls --color=tty' || alias ls='ls -G
 # Use parameter expansion in prompt
 setopt prompt_subst
 
-PROMPT='%{$fg[green]%}» %{$fg[cyan]%}%~%{$reset_color%} '
+PROMPT='%{$fg[magenta]%}» %{${fg[blue]%}%~%{$reset_color%} '
 

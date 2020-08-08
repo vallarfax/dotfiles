@@ -49,10 +49,11 @@ nnoremap <leader>fn :e %:h
 " nnoremap <leader>/ :Rg<CR>
 
 " Search in files with current working directory as base
-nnoremap <leader>/ :Ack!<space>
+nnoremap <leader>fi :Rg<space>
 
 " Ranger
-nnoremap <leader>fb :Ranger<CR>
+let g:ranger_map_keys = 0
+nnoremap <leader>fr :Ranger<CR>
 
 " Search lines in current buffer
 nnoremap <leader>sb :BLines<CR>
@@ -155,3 +156,8 @@ call gina#custom#mapping#nmap(
 nnoremap <leader>dd <Plug>(coc-definition)
 nnoremap <leader>di <Plug>(coc-implementation)
 nnoremap <leader>dr <Plug>(coc-references)
+
+map <c-\> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+\ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+\ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+

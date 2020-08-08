@@ -10,3 +10,9 @@
     dest: '{{ ansible_env.HOME }}/Library/Preferences/kitty/kitty.conf'
     state: link
 
+- name: link kitty theme dir
+  file:
+    src: '{{ configs }}/kitty/themes'
+    dest: '{{ ansible_env.HOME }}/Library/Preferences/kitty/themes'
+    state: link
+
