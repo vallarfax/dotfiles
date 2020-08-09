@@ -24,7 +24,6 @@ nnoremap <leader>Pr :UpdateRemotePlugins<CR>
 nnoremap <leader>sc :let @/ = ""<CR>
 
 " Make
-"nnoremap <leader>mm :make<CR>
 nnoremap M :make<CR>
 set makeprg=./m
 
@@ -73,27 +72,16 @@ nnoremap <leader>bd :Bdelete<CR>
 
 
 " Window navigation
-" nnoremap <leader>wh <C-w>h
-" nnoremap <leader>wj <C-w>j
-" nnoremap <leader>wk <C-w>k
-" nnoremap <leader>wl <C-w>l
 nnoremap <leader>wr <C-w>r
-" nnoremap <leader>wh <C-w>h
-
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 
-" TODO: Figure out if I want to keep the default mappings
 " Surround
 " let g:surround_no_mappings = 1
 " vnoremap <silent>s <Plug>(operator-surround-append)
-
-
-" TODO: is this a good key combo?
-nnoremap <leader>bf :Neoformat<CR>
 
 " Git shortcuts
 nnoremap <leader>gs :Gina status -s<CR>
@@ -157,6 +145,7 @@ nnoremap <leader>dd <Plug>(coc-definition)
 nnoremap <leader>di <Plug>(coc-implementation)
 nnoremap <leader>dr <Plug>(coc-references)
 
+" Shows the color mappings for the symbol underneath the cursor.
 map <c-\> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
 \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
