@@ -73,6 +73,7 @@ nnoremap <leader>bd :Bdelete<CR>
 
 " Window navigation
 nnoremap <leader>wr <C-w>r
+nnoremap <tab> <C-W><C-W>
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
