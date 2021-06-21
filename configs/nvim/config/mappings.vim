@@ -7,7 +7,8 @@ let mapleader = "\<Space>"
 " Move vertically by visual line
 nnoremap j gj
 nnoremap k gk
-
+nnoremap ; l
+nnoremap l h
 
 " Open config files
 nnoremap <leader>fvs :Files ~/.config/nvim/<CR>
@@ -64,7 +65,7 @@ nnoremap <leader>so :Lines<CR>
 nnoremap <leader><space> :Commands<CR>
 
 " Show open buffers
-nmap ; :Buffers<CR>
+nmap ' :Buffers<CR>
 " nnoremap <leader>bb :Buffers<CR>
 
 " Close buffer without closing split
