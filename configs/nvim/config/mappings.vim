@@ -12,6 +12,9 @@ nnoremap l h
 vnoremap ; l
 vnoremap l h
 
+map <PageUp> <C-u>
+map <PageDown> <C-d>
+
 " Open config files
 nnoremap <leader>fvs :Files ~/.config/nvim/<CR>
 nnoremap <leader>fvd :Files ~/.dotfiles/<CR>
