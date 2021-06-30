@@ -9,6 +9,8 @@ nnoremap j gj
 nnoremap k gk
 nnoremap ; l
 nnoremap l h
+vnoremap ; l
+vnoremap l h
 
 " Open config files
 nnoremap <leader>fvs :Files ~/.config/nvim/<CR>
