@@ -27,6 +27,7 @@ Plug 'pearofducks/ansible-vim'
 Plug 'tikhomirov/vim-glsl'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'ziglang/zig.vim'
+Plug 'jparise/vim-graphql'
 
 " Theme plugins
 Plug 'mhartington/oceanic-next'
