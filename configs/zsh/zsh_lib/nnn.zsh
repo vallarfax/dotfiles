@@ -1,0 +1,7 @@
+alias n=nnn
+export NNN_FIFO=/tmp/nnn.fifo
+export NNN_PLUG='f:fzcd;p:preview-tui;j:fzz'
+
+BLK="00" CHR="00" DIR="04" EXE="01" REG="00" HARDLINK="00" SYMLINK="06" MISSING="00" ORPHAN="00" FIFO="00" SOCK="00" OTHER="00"
+export NNN_FCOLORS="$BLK$CHR$DIR$EXE$REG$HARDLINK$SYMLINK$MISSING$ORPHAN$FIFO$SOCK$OTHER"
+

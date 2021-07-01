@@ -3,10 +3,14 @@ bindkey -e
 
 unsetopt beep
 
-alias vim=nvim
+# PATH=/usr/local/opt/llvm/bin:$PATH
 PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/local/sbin
+PATH=$PATH:/usr/local/opt
 PATH=$PATH:/Applications/kitty.app/Contents/MacOS/
-export IONHOME="$HOME/Dev/bitwise/ion"
+PATH=$PATH:~/libs/zig
+# export LDFLAGS="-L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+# export CPPFLAGS="-I/usr/local/opt/llvm/include"
 
 # Do I need this, actually?
 zstyle :compinstall filename '/Users/chris/.zshrc'

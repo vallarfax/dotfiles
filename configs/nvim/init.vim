@@ -9,5 +9,5 @@ source ~/.config/nvim/config/theme.vim
 source ~/.config/nvim/config/fzf.vim
 source ~/.config/nvim/config/javascript.vim
 source ~/.config/nvim/config/statusline.vim
-source ~/.config/nvim/config/ranger.vim
+source ~/.config/nvim/config/nnn.vim
 

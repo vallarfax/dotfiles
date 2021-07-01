@@ -41,24 +41,8 @@ nnoremap <leader>x :cclose<CR>
 " Search file names with current working directory as base
 nnoremap <leader>f/ :Files<CR>
 
-" Search filenames with current buffer directory as base
-nnoremap <leader>ff :Files %:p:h<CR>
-
-" Makes it easier to create new file in same dir as current buffer
-nnoremap <leader>fn :e %:h
-
-" Search for the word under the cursor in the current directory
-"nnoremap <leader>fw mo:Ack! "\b<cword>\b" <CR>
-
-" Search in files with current working directory as base
-" nnoremap <leader>/ :Rg<CR>
-
 " Search in files with current working directory as base
 nnoremap <leader>fi :Rg<space>
-
-" Ranger
-let g:ranger_map_keys = 0
-nnoremap <leader>fr :Ranger<CR>
 
 " Search lines in current buffer
 nnoremap <leader>sb :BLines<CR>
@@ -72,6 +56,16 @@ nnoremap <leader><space> :Commands<CR>
 " Show open buffers
 nmap ' :Buffers<CR>
 " nnoremap <leader>bb :Buffers<CR>
+
+
+" nnn
+let g:nnn#set_default_mappings = 0
+
+" Open nnn in root dir
+nnoremap <silent> <leader>N :NnnPicker<CR>
+
+" Open nnn using the current buffer's path as a base
+nnoremap <silent> <leader>n :NnnPicker %:p:h<CR>
 
 " Close buffer without closing split
 nnoremap <leader>bd :Bdelete<CR>

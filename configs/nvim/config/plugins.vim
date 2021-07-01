@@ -13,7 +13,7 @@ Plug 'tpope/vim-eunuch'
 
 " bclose is a pre-req for ranger.vim
 Plug 'rbgrouleff/bclose.vim' 
-Plug 'francoiscabrol/ranger.vim'
+Plug 'mcchrish/nnn.vim'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -26,6 +26,7 @@ Plug 'mattn/emmet-vim'
 Plug 'pearofducks/ansible-vim'
 Plug 'tikhomirov/vim-glsl'
 Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'ziglang/zig.vim'
 
 " Theme plugins
 Plug 'mhartington/oceanic-next'
